@@ -1,0 +1,162 @@
+[
+  {
+    "username": "平川",
+    "date": "2025-08-12",
+    "exercise": "ドリアンロウ",
+    "sets": [
+      {
+        "weight": 90.0,
+        "reps": 7
+      },
+      {
+        "weight": 90.0,
+        "reps": 5
+      },
+      {
+        "weight": 90.0,
+        "reps": 3
+      }
+    ],
+    "total_load": 1350.0
+  },
+  {
+    "username": "平川",
+    "date": "2025-08-12",
+    "exercise": "ベンチプレス",
+    "sets": [
+      {
+        "weight": 75.0,
+        "reps": 5
+      },
+      {
+        "weight": 75.0,
+        "reps": 3
+      },
+      {
+        "weight": 75.0,
+        "reps": 1
+      }
+    ],
+    "total_load": 675.0
+  },
+  {
+    "username": "くが",
+    "date": "2025-08-12",
+    "exercise": "バーベルアームカール",
+    "sets": [
+      {
+        "weight": 40.0,
+        "reps": 10
+      }
+    ],
+    "total_load": 400.0
+  },
+  {
+    "username": "くが",
+    "date": "2025-08-12",
+    "exercise": "ドリアンロウ",
+    "sets": [
+      {
+        "weight": 60.0,
+        "reps": 10
+      }
+    ],
+    "total_load": 600.0
+  },
+  {
+    "username": "平川",
+    "date": "2025-08-11",
+    "exercise": "ドリアンロウ",
+    "sets": [
+      {
+        "weight": 80.0,
+        "reps": 10
+      },
+      {
+        "weight": 80.0,
+        "reps": 8
+      },
+      {
+        "weight": 80.0,
+        "reps": 6
+      }
+    ],
+    "total_load": 1920.0
+  },
+  {
+    "username": "平川",
+    "date": "2025-08-11",
+    "exercise": "ベンチプレス",
+    "sets": [
+      {
+        "weight": 70.0,
+        "reps": 9
+      },
+      {
+        "weight": 70.0,
+        "reps": 6
+      },
+      {
+        "weight": 70.0,
+        "reps": 4
+      }
+    ],
+    "total_load": 1330.0
+  },
+  {
+    "username": "平川",
+    "date": "2025-08-10",
+    "exercise": "ドリアンロウ",
+    "sets": [
+      {
+        "weight": 80.0,
+        "reps": 6
+      },
+      {
+        "weight": 80.0,
+        "reps": 4
+      }
+    ],
+    "total_load": 800.0
+  },
+  {
+    "username": "平川",
+    "date": "2025-08-10",
+    "exercise": "ドリアンロウ",
+    "sets": [
+      {
+        "weight": 80.0,
+        "reps": 8
+      },
+      {
+        "weight": 80.0,
+        "reps": 6
+      },
+      {
+        "weight": 80.0,
+        "reps": 4
+      }
+    ],
+    "total_load": 1440.0
+  },
+  {
+    "username": "平川",
+    "date": "2025-08-09",
+    "exercise": "ドリアンロウ",
+    "sets": [
+      {
+        "weight": 80.0,
+        "reps": 7
+      },
+      {
+        "weight": 80.0,
+        "reps": 5
+      },
+      {
+        "weight": 80.0,
+        "reps": 3
+      }
+    ],
+    "total_load": 1200.0
+  }
+]
