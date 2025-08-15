@@ -1,7 +1,8 @@
 # 🏋️ トレーニングノートアプリ
 
 ## 📌 アプリ概要
-本アプリは、ユーザーが日々のトレーニング記録（種目・重量・レップ数）を入力し、総負荷量（重量 × レップ数の合計）を計算・保存します。過去記録をユーザーごとに種目別でグラフ化して推移を確認できます。
+本アプリは、ユーザーが日々のトレーニング記録（種目・重量・レップ数）を入力し、総負荷量（重量 × レップ数の合計）を計算・保存します。  
+過去記録をユーザーごと・種目別にグラフ化し、推移を確認できます。
 
 - **入力項目**  
   - ユーザー名（履歴または新規）
@@ -19,16 +20,17 @@
 ## 🛠 使用技術
 - **バックエンド**: FastAPI
 - **フロントエンド**: Streamlit
-- **データ保存**: JSONファイル
-- **可視化**: pandas, Streamlit chart API
+- **データ保存**: JSONファイル（`data.json`, `history.json`）
+- **可視化**: pandas, Streamlit Chart API
 
 ---
 
 ## 🔌 API仕様
+
 ### `POST /add_record`
 トレーニング記録を追加し、総負荷量を返す。
 
-例:
+**リクエスト例**
 ```json
 {
   "username": "Sumire",
@@ -39,28 +41,40 @@
     {"weight": 70, "reps": 5}
   ]
 }
+🖥 システム設計図
 
 
+左：ユーザー（ブラウザ）
+
+中央：Streamlit（UI処理）
+
+右：FastAPI（データ処理＋JSON保存）
+
+保存先：data.json と history.json
+
+📜 コード説明図
 
 
-## 2. システム設計図（system_diagram.png）
-構成イメージはこんな感じ👇  
-- 左：ユーザー（ブラウザ）
-- 中：Streamlit（UI処理）
-- 右：FastAPI（データ処理＋JSON保存）
-- 保存先：`records.json`
+main.py（FastAPI）
 
----
+/add_record → 記録保存＆総負荷量計算
 
-## 3. コード説明図（code_diagram.png）
-- `main.py`（FastAPI）
-  - `/add_record` → 記録保存＆総負荷量計算
-  - `/get_records` → 全記録取得
-  - `/get_history` → 入力履歴取得
-- `app.py`（Streamlit）
-  - UI入力フォーム
-  - セット追加機能
-  - 保存ボタン
-  - 過去記録表示（ユーザー → 種目 → グラフ）
+/get_records → 全記録取得
 
----
+/get_history → 入力履歴取得
+
+app.py（Streamlit）
+
+UI入力フォーム
+
+セット追加機能
+
+保存ボタン
+
+過去記録表示（ユーザー → 種目 → グラフ）
+
+🚀 デプロイ情報
+アプリURL（Streamlit Cloud）: https://your-streamlit-app.streamlit.app
+
+API URL（Render）: https://xxxxx.onrender.com
+
