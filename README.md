@@ -32,9 +32,6 @@
 ---
 
 ## 2. システム設計図（system_diagram.png）
-<p align="left">
-  <img width="500" height="300" src="code_diagram.png">
-</p>
 構成イメージはこんな感じ👇  
 - 左：ユーザー（ブラウザ）
 - 中：Streamlit（UI処理）
