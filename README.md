@@ -35,6 +35,7 @@
 <p align="left">
   <img width="500" height="300" src="system_diagram.png">
 </p>
+
 構成イメージはこんな感じ👇  
 - 左：ユーザー（ブラウザ）
 - 中：Streamlit（UI処理）
@@ -44,6 +45,10 @@
 ---
 
 ## 3. コード説明図（code_diagram.png）
+<p align="left">
+  <img width="500" height="300" src="code_diagram.png">
+</p>
+
 - `main.py`（FastAPI）
   - `/add_record` → 記録保存＆総負荷量計算
   - `/get_records` → 全記録取得
