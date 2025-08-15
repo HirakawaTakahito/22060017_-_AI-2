@@ -3,7 +3,7 @@ import requests
 import datetime
 import pandas as pd
 
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://training-api-p14p.onrender.com"
 
 st.title("🏋️ トレーニングノートアプリ")
 
