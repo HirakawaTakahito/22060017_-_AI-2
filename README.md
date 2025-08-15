@@ -41,40 +41,40 @@
     {"weight": 70, "reps": 5}
   ]
 }
-🖥 システム設計図
+## 📝 システム概要
+
+### 🖥 システム設計図
+
+以下に本システムの構成イメージを示します。
 
 
-左：ユーザー（ブラウザ）
 
-中央：Streamlit（UI処理）
+- **ユーザー（ブラウザ）**: ユーザーインターフェースを操作するクライアント側。
+- **Streamlit（UI処理）**: ユーザーからの入力を受け付け、表示を行うフロントエンド部分。
+- **FastAPI（データ処理＋JSON保存）**: データの保存、計算処理を行うバックエンド部分。
+- **保存先**: 記録データは `records.json` または `data.json` と `history.json` に分割して保存されます。
 
-右：FastAPI（データ処理＋JSON保存）
+---
 
-保存先：data.json と history.json
+### 📜 コード説明図
 
-📜 コード説明図
+主要なコードの役割と処理フローを以下に示します。
 
 
-main.py（FastAPI）
 
-/add_record → 記録保存＆総負荷量計算
+#### `main.py`（FastAPI）
 
-/get_records → 全記録取得
+FastAPIアプリケーションとして、以下のエンドポイントを提供します。
 
-/get_history → 入力履歴取得
+- `/add_record`: 新しい記録を保存し、総負荷量を計算します。
+- `/get_records`: すべての記録データを取得します。
+- `/get_history`: 入力履歴データを取得します。
 
-app.py（Streamlit）
+#### `app.py`（Streamlit）
 
-UI入力フォーム
+Streamlitアプリケーションとして、以下の機能を提供します。
 
-セット追加機能
-
-保存ボタン
-
-過去記録表示（ユーザー → 種目 → グラフ）
-
-🚀 デプロイ情報
-アプリURL（Streamlit Cloud）: https://your-streamlit-app.streamlit.app
-
-API URL（Render）: https://xxxxx.onrender.com
-
+- **UI入力フォーム**: ユーザーがデータを入力するためのフォーム。
+- **セット追加機能**: 複数のトレーニングセットを追加できる機能。
+- **保存ボタン**: 入力されたデータをFastAPI経由で保存するためのボタン。
+- **過去記録表示**: 保存された記録を「ユーザー」→「種目」→「グラフ」の順で表示する機能。
