@@ -61,4 +61,7 @@
 
 ---
 
+## 改善案
+夏休み課題の改善案については [improvement.md](./improvement.md) をご覧ください。
+
 
